@@ -7,23 +7,13 @@ class Application
 
     resp.write "#{t}\n"
 
-    if num_1==num_2 && num_2==num_3
-      resp.write "You Win"
+    if t < 12
+      resp.write "Good Morning!"
     else
-      resp.write "You Lose"
+      resp.write "Good Afternoon"
     end
 
     resp.finish
-  end
-
-  num_1 = Kernel.rand(1..20)
-  num_2 = Kernel.rand(1..20)
-  num_3 = Kernel.rand(1..20)
-
-  if num_1==num_2 && num_2==num_3
-    resp.write "You Win"
-  else
-    resp.write "You Lose"
   end
 
 end
