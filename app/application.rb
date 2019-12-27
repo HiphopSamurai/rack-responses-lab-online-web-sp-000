@@ -11,6 +11,7 @@ class Application
       resp.write "Good Morning!"
     elseif Time.now.hour.between?(12, 23)
       resp.write "Good Afternoon!"
+    end
 
     resp.finish
   end
