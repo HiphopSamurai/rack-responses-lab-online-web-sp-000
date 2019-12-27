@@ -9,7 +9,7 @@ class Application
 
     if t < 12
       resp.write "Good Morning!"
-    elsif t >- 12
+    elsif t >= 12
       resp.write "Good Afternoon!"
     end
 
