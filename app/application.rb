@@ -7,9 +7,9 @@ class Application
 
     resp.write "#{t}\n"
 
-    if t >= 12
+    if t < 12
       resp.write "Good Morning!"
-    else
+    elsif t >- 12
       resp.write "Good Afternoon!"
     end
 
